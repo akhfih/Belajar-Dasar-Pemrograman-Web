@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+.biru {
+  color: #189ffa;
+}
+.abu {
+  color: #aaaaaa;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  align-content: center;
+  padding-bottom: 50px;
+}
+
+/*bagian header*/
+header {
+  box-shadow: 0px 11px 16px -14px #000000;
+
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background-color: white;
+}
+
+.logo {
+  float: left;
+  line-height: 50px;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 50px;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.menu {
+  float: right;
+  display: block;
+}
+
+nav li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav li a {
+  font-size: small;
+  text-decoration: none;
+  line-height: 50px;
+  padding: 0 10px;
+  color: #aaaaaa;
+}
+nav li a:hover {
+  font-weight: 700;
+  color: #189ffa;
+}
+
+/* bagian jumbotron*/
+
+.jumbotron {
+  background-image: url(image/bg-foto.jpg);
+  /* height: 779px; */
+  width: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron-content {
+  padding: 200px 0;
+  width: 40%;
+}
+
+.jumbotron-content h1 {
+  font-size: 50px;
+  line-height: 1.2em;
+}
+
+.jumbotron-content p {
+  margin: 27px auto;
+}
+
+.btn-hire-me {
+  display: inline-block;
+  margin-top: 23px;
+  padding: 7px 40px;
+  color: #aaaaaa;
+  text-decoration: none;
+  border-radius: 20px;
+  border: 2px solid #aaaaaa;
+  background-color: white;
+  box-shadow: 0px 11px 16px -14px #000000;
+}
+.btn-hire-me:hover {
+  border: 2px solid #189ffa;
+  background-color: #189ffa;
+
+  color: white;
+}
+
+.portofolio,
+.sertifikat {
+  background-color: #189ffa;
+  box-shadow: 0px 11px 16px -14px #000000;
+}
+
+.portofolio,
+.sertifikat,
+footer {
+  height: 100%;
+  color: white;
+}
+
+.flex-colum {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-header {
+  justify-content: center;
+  padding: 0;
+
+  margin-top: 50px;
+
+  font-size: x-large;
+
+  text-align: center;
+}
+
+.content-content {
+  margin-top: 30px;
+
+  text-align: center;
+}
+
+.content-kiri {
+  vertical-align: middle;
+  width: 46%;
+  text-align: center;
+  float: left;
+
+  /* background-color: white; */
+}
+
+.content-kiri img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 9px 11px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.content-kanan {
+  width: 46%;
+  float: right;
+}
+
+.content-kanan h2 {
+  text-align: left;
+}
+.sertifikat .content-kanan h2 {
+  padding: 25% 0;
+}
+
+.content-kanan p {
+  margin: 15px 0;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+/* bagian tools */
+.my-tools .content-header {
+  color: #189ffa;
+  background-color: white;
+}
+.my-tools .content-header span,
+.portofolio .content-header span,
+.sertifikat .content-header span {
+  font-size: large;
+}
+
+.my-tools .content-content {
+  text-align: center;
+}
+.my-tools .content-content a {
+  margin: 0 30px;
+}
+.my-tools .content-content a {
+  margin: 0 30px;
+  width: 1.4em;
+}
+
+.about p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about img {
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 40px;
+}
+
+footer {
+  padding: 20px;
+  background-color: #189ffa;
+  text-align: center;
+}
