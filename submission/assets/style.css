@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +24,6 @@
 /*bagian header*/
 header {
   box-shadow: 0px 11px 16px -14px #000000;
-
   position: sticky;
   top: 0;
   height: 50px;
@@ -31,8 +31,9 @@ header {
 }
 
 .logo {
-  float: left;
+  display: inline-block;
   line-height: 50px;
+  padding-right: 0;
 }
 
 .logo a {
@@ -42,9 +43,17 @@ header {
   font-weight: bold;
 }
 
+.bar {
+  margin-top: 5px;
+  cursor: pointer;
+  float: right;
+  display: none;
+}
+
 .menu {
   float: right;
-  display: block;
+
+  margin: 5px auto;
 }
 
 nav li {
@@ -65,18 +74,18 @@ nav li a:hover {
 }
 
 /* bagian jumbotron*/
-
 .jumbotron {
   background-image: url(image/bg-foto.jpg);
-  /* height: 779px; */
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
+  object-position: center;
 }
 
 .jumbotron-content {
   padding: 200px 0;
-  width: 40%;
+  width: 50%;
 }
 
 .jumbotron-content h1 {
@@ -95,17 +104,17 @@ nav li a:hover {
   color: #aaaaaa;
   text-decoration: none;
   border-radius: 20px;
-  border: 2px solid #aaaaaa;
+  border: 1px solid #aaaaaa;
   background-color: white;
   box-shadow: 0px 11px 16px -14px #000000;
 }
-.btn-hire-me:hover {
-  border: 2px solid #189ffa;
-  background-color: #189ffa;
 
+.btn-hire-me:hover {
+  background-color: #189ffa;
   color: white;
 }
 
+/* bagian protofolio */
 .portofolio,
 .sertifikat {
   background-color: #189ffa;
@@ -125,25 +134,16 @@ footer {
   height: 100%;
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
 .content-header {
   justify-content: center;
   padding: 0;
-
   margin-top: 50px;
-
   font-size: x-large;
-
   text-align: center;
 }
 
 .content-content {
   margin-top: 30px;
-
   text-align: center;
 }
 
@@ -152,8 +152,6 @@ footer {
   width: 46%;
   text-align: center;
   float: left;
-
-  /* background-color: white; */
 }
 
 .content-kiri img {
@@ -217,4 +215,90 @@ footer {
   padding: 20px;
   background-color: #189ffa;
   text-align: center;
+}
+
+/* bagian media query */
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 90%;
+  }
+
+  .bar {
+    float: right;
+    display: block;
+  }
+
+  .menu {
+    position: absolute;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    display: none;
+    text-align: center;
+    float: none;
+    margin-top: -1px;
+    background-color: #189ffa;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 11px 16px -14px #000000;
+    border: 1px solid white;
+  }
+
+  .show {
+    display: block;
+  }
+
+  nav li a {
+    color: white;
+  }
+  nav li a:hover {
+    color: white;
+  }
+
+  nav li {
+    display: block;
+    list-style-type: none;
+  }
+  nav li:hover {
+    color: #189ffa;
+  }
+
+  .jumbotron {
+    background-image: url(image/fg-foto-2.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 30%;
+  }
+
+  .jumbotron-content h1 {
+    font-size: 40px;
+    line-height: 1.2em;
+  }
+  .jumbotron-content {
+    padding-top: 300px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .grup {
+    text-align: center;
+  }
+  .content-kanan {
+    margin-top: 30px;
+    width: 100%;
+    float: none;
+  }
+
+  .content-kanan h2 {
+    text-align: center;
+  }
+  .content-kiri {
+    width: 100%;
+    float: none;
+  }
+
+  .sertifikat .content-kanan h2 {
+    padding-top: 3px;
+    padding-bottom: 5%;
+  }
 }
